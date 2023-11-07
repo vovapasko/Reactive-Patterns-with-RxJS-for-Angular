@@ -14,7 +14,7 @@ import {DialogModule} from 'primeng/dialog';
 import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,21 +27,22 @@ import { RecipesFilterComponent } from './recipes-filter/recipes-filter.componen
     HomeComponent,
     RecipesFilterComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    DataViewModule,
-    PanelModule,
-    DialogModule,
-    DropdownModule,
-    InputTextModule,
-    ButtonModule,
-    RippleModule,
-    RatingModule,
-    FormsModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        DataViewModule,
+        PanelModule,
+        DialogModule,
+        DropdownModule,
+        InputTextModule,
+        ButtonModule,
+        RippleModule,
+        RatingModule,
+        FormsModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [RecipesService],
   bootstrap: [AppComponent]
 })
